@@ -16,7 +16,7 @@ export async function requestReading(request: ReadingRequest) {
     });
 
     if (error) {
-      throw error;
+      console.error('Supabase Oracle Error:', error);
     }
 
     return data;
